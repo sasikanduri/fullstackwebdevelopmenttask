@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="entered">
+  <head>
+    <title>Sign In Form</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="signin.css" />
+  </head>
+  <body>
+    <div class = "overlay"></div>
+    <form name="myForm" action="driversvalid.php" method="POST">
+      <div class="login-box">
+        <h1>Sign In</h1>
+
+        <div class="textbox">
+          <input
+            type="text"
+            placeholder="Username"
+            name="user"
+            value=""
+            required
+          />
+        </div>
+        <div class="textbox">
+          <input
+            type="password"
+            placeholder="Password"
+            name="pass"
+            value=""
+            maxlength="8"
+            required
+          />
+        </div>
+        <input class="btn" type="submit" name="submit" value="Sign in" />
+		<center style="font-size:20px;color:white;"> or<br><a href="emlogin.html">Sign in via email</a><center>
+      </div>
+    </form>
+  </body>
+</html>

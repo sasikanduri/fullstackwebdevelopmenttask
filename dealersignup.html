@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sign Up Form </title>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dealersignup.css">
+</head>
+
+<body>
+    <div class = "overlay"></div>
+
+    
+    <form from="myForm" action="dealers_db.php" method="POST">
+
+        <div class="login-box">
+
+            <h1> Sign Up </h1>
+
+            <div class="textbox">
+                <input type="text" placeholder="Username" id="fname" name="fname" value="" required>
+            </div>
+
+            <div class="textbox">
+               
+                    <input type="password" placeholder="Password" name="pass" title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+            </div>
+
+            <div class="textbox">
+                <input type="text" placeholder="Email" id="email" name="email" value="" required
+                    pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+            </div>
+
+            <div class="textbox">
+                <input type="text" placeholder="Mobile number" id="mobile" name="mobile" value="" required
+                    onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){10,}">
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="nature of material" id="material" name="nature of material" value="" required>
+            </div>
+            <div class="textbox">
+                <input type="number" placeholder="weight of material in kgs" id="weight" name="weight of material" value="">
+            </div>
+            
+
+            <input class="btn" type="submit" name="" value="Sign Up"> <br> <br>
+
+            <center> <a href="signin.html"> Already have an account ? </a>
+                <center>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>

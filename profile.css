@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+} 
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 15px;
+}
+#sec5 div{
+    height: 60%;
+    margin-top: 5%;
+    color: aliceblue;
+}
+.row img{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    
+}
+@media screen and (max-width: 100%) {
+    .column {
+        width: 100%;
+        display:block;
+    }
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.container {
+    padding: 0 5px;
+    
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://th.bing.com/th/id/R.83b06bcfb1634f7925527d5bf311009d?rik=snIBG72zXtEXGA&riu=http%3a%2f%2fwallpapers-hd-wide.com%2fwp-content%2fuploads%2f2016%2f02%2fGood_Volvo_Truck_wallpaper-1920x1080-660x371.jpg&ehk=LizGTCeOQUsaOgW3WoYagpmlOfLVH%2brRZr1SRVq%2f6PM%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width:100%;
+    overflow:hidden;
+    position:fixed;
+    
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#sec1{
+    margin-top: 45%;
+    height:600px;
+    width: 100%;
+    background:black;
+    display: inline-block;
+}
+#sec2{
+    height:600px;
+    width: 100%;
+    background:black;
+    display: inline-block;
+}
+#sec3{
+    height:600px;
+    width: 100%;
+    background:black;
+    display: inline-block;
+}
+#sec4{
+    height:600px;
+    width: 100%;
+    background:black;
+    display: inline-block;
+}
+#sec5{
+    height:1100px;
+    width: 100%;
+    background:black;
+    display: inline-block;
+}
+#sec1 pre{
+    padding-top: 10%;
+    color: aliceblue;
+}
+#sec2 pre{
+    padding-top: 10%;
+    color: aliceblue;
+}
+#sec3 pre{
+    padding-top: 20%;
+    color:gold;
+    
+}
+#sec4 pre{
+    padding-top: 10%;
+    color: aliceblue;
+
+}
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.details{
+    background-color:beige;
+}
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 2px solid #2b852e;
+  }
+  .textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+    font-weight: bold;
+    color :white;
+  }
+  .login-box {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
