@@ -1,5 +1,10 @@
 This project is based on online truck booking system  designed for the assigned task purpose .This is basic Design of Site for Desktop view.
 
+●Frontend - html,css,bootstrap 5
+●Backend -php,mysql
+●Xampp server
+●platform-Visual studio code
+
 
 Step-by-step process :
 
